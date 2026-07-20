@@ -1,0 +1,8 @@
+trigger: none
+pr: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: echo "The npm release pipeline is configured as a placeholder."
