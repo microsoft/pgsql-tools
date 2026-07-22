@@ -4,7 +4,13 @@ The PostgreSQL Tools Service (pgtoolsservice, or PGTS) is an application that pr
 * Connection management
 * Language Service support using VS Code protocol
 * Query execution and resultset management
-* 
+* Model Context Protocol (MCP) server
+
+## PostgreSQL MCP server
+
+[`@microsoft/postgres-mcp`](postgres-mcp/README.md) provides PostgreSQL tools and
+connection utilities for MCP-compatible AI assistants.
+
 ## Telemetry
 
 This project collects telemetry data through the related PostgreSQL for VS Code
@@ -12,6 +18,9 @@ extenension, which is used to help understand how to improve the product. For
 example, this usage data helps to debug issues, such as slow start-up times, and
 to prioritize new features. You can disable telemetry as described in the VS
 Code [disable telemetry reporting] documentation.
+
+The PostgreSQL MCP server also collects usage telemetry. Disable it with
+`run --no-telemetry`.
 
 Please see [PRIVACY](PRIVACY) for more information about data collection and use.
 
@@ -36,6 +45,11 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## License
+
+The [MIT License](LICENSE) applies to both the pgsql-tools artifacts and the
+PostgreSQL MCP server.
 
 ## Trademarks
 
